@@ -1,10 +1,10 @@
 import React from 'react'
-import { StyledBlock } from '../styles/block-reveal-styles'
+import { StyledBlock, Inner } from '../styles/block-reveal-styles'
 
-export const BlockReveal = ({ text, ...props }) => {
+export const BlockReveal = ({ children, size, ...props }) => {
   return (
     <StyledBlock {...props}>
-      <h1>{text}</h1>
+      <Inner size={size}>{children}</Inner>
     </StyledBlock>
   )
 }
