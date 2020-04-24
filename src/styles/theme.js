@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
-    bgColor: '#011627',
-    accentColor: '#c792ea',
+    bgColor: '#121212',
+    accentColor: '#f1f1f1',
     textColor: '#abb2bf',
   },
   fontWeights: {

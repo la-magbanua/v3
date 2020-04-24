@@ -1,9 +1,13 @@
-import React from "react"
+import React from 'react'
+import { Wrap } from '../components'
+import { StyledFooter } from '../styles/footer-styles'
 
 export const Footer = () => {
   return (
-    <footer>
-      <p>{new Date().getFullYear()}</p>
-    </footer>
+    <StyledFooter>
+      <Wrap>
+        <p>Designed & Built by L.A. Magbanua</p>
+      </Wrap>
+    </StyledFooter>
   )
 }

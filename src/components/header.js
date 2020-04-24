@@ -1,12 +1,17 @@
-import { Link } from 'gatsby'
 import React from 'react'
+import { Link } from 'gatsby'
+
+import { Wrap } from '../components'
+import { StyledHeader, InnerHeader, Brand } from '../styles/header-styles'
 
 export const Header = () => (
-  <header>
-    <div>
-      <h1 style={{ margin: 0 }}>
-        <Link to="/">Home</Link>
-      </h1>
-    </div>
-  </header>
+  <StyledHeader>
+    <Wrap>
+      <InnerHeader>
+        <Brand>
+          <Link to="/">L.A.</Link>
+        </Brand>
+      </InnerHeader>
+    </Wrap>
+  </StyledHeader>
 )

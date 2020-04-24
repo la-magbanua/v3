@@ -6,11 +6,13 @@ export const GlobalStyles = createGlobalStyle`
 
   html {
     height: 100%;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   body {
     height: 100%;
+    position: relative;
+    background: ${({ theme }) => theme.colors.bgColor};
   }
 
   #___gatsby,
@@ -22,5 +24,9 @@ export const GlobalStyles = createGlobalStyle`
 
   main {
     flex: 1;
+  }
+
+  a {
+    text-decoration: none;
   }
 `

@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { Layout } from '../components'
+import { Layout, BlockReveal } from '../components'
 
 const IndexPage = () => (
   <Layout>
-    <h1>L.A.</h1>
+    <BlockReveal text="Front End" />
   </Layout>
 )
 
