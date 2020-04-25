@@ -10,7 +10,7 @@ export const InnerHeader = styled.div`
 
 export const Brand = styled.div`
   a {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: ${({ theme }) => theme.fontWeights.bold};
     color: ${({ theme }) => theme.colors.accentColor};
   }
