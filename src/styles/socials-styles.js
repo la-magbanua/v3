@@ -4,10 +4,6 @@ import { motion } from 'framer-motion'
 export const StyledSocials = styled(motion.div)`
   margin-top: 15rem;
   display: inline-block;
-
-  @media screen and (max-width: 380px) {
-    margin-top: 12rem;
-  }
 `
 
 export const SocialLinks = styled.div`

@@ -5,6 +5,7 @@ export const StyledHeader = styled.header``
 export const InnerHeader = styled.div`
   height: 80px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 `
 
