@@ -4,5 +4,6 @@ import { Header } from './header'
 import { Footer } from './footer'
 import { BlockReveal } from './block-reveal'
 import { Wrap } from './wrap'
+import { Socials } from './socials'
 
-export { Layout, Head, Header, Footer, BlockReveal, Wrap }
+export { Layout, Head, Wrap, Header, Footer, BlockReveal, Socials }
