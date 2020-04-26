@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "title": "c19",
+    "description": "Simple corona virus stats tracking app.",
+    "github_url": "https://github.com/la-magbanua/c19",
+    "url": "https://c19.now.sh",
+    "stack": ["Next", "Styled Components"]
+  },
+  {
+    "id": 2,
+    "title": "Recipe Xpress",
+    "description": "App that generates recipes based on the ingredients you input.",
+    "github_url": "https://github.com/la-magbanua/recipe-xpress",
+    "url": "https://recipe-xpress.netlify.app",
+    "stack": ["React", "Styled Components"]
+  },
+  {
+    "id": 3,
+    "title": "v3",
+    "description": "3rd iteration of my portfolio website",
+    "github_url": "https://github.com/la-magbanua/v3",
+    "url": "https://la-magbanua.now.sh",
+    "stack": ["Gatsby", "Styled Components"]
+  }
+]

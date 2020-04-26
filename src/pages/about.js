@@ -4,6 +4,7 @@ import { Layout } from '../components'
 import {
   StyledAboutPage,
   Section,
+  SectionTitle,
   AboutDescription,
   Skills,
   SkillItem,
@@ -25,7 +26,7 @@ export default () => {
     <Layout>
       <StyledAboutPage>
         <Section>
-          <h1>About Me</h1>
+          <SectionTitle>About Me</SectionTitle>
           <AboutDescription>
             I'm a front end developer based in the Philippines. Focused on
             delivering delighful & functional web experiences. I mainly use

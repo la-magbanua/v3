@@ -12,7 +12,9 @@ export const Section = styled.div`
   }
 `
 
-export const AboutDescription = styled.p`
+export const SectionTitle = styled(motion.h1)``
+
+export const AboutDescription = styled(motion.p)`
   line-height: 24px;
   max-width: 500px;
   opacity: 80%;

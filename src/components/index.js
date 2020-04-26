@@ -7,6 +7,7 @@ import { Wrap } from './wrap'
 import { Socials } from './socials'
 import { SideMenu } from './side-menu'
 import { NavMenu } from './nav-menu'
+import { ProjectItem } from './project-item'
 
 export {
   Layout,
@@ -18,4 +19,5 @@ export {
   Socials,
   SideMenu,
   NavMenu,
+  ProjectItem,
 }
