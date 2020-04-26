@@ -1,11 +1,14 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const StyledProjectsPage = styled.div`
+export const StyledProjectsPage = styled(motion.div)`
   margin-top: 50px;
   color: ${({ theme }) => theme.colors.textColor};
 `
 
-export const Projects = styled.div`
+export const SectionTitle = styled(motion.h1)``
+
+export const Projects = styled(motion.div)`
   .carousel {
     position: relative;
     max-width: 700px;

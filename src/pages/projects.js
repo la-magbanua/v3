@@ -11,16 +11,40 @@ import 'pure-react-carousel/dist/react-carousel.es.css'
 
 import { Layout, ProjectItem } from '../components'
 
-import { StyledProjectsPage, Projects } from '../styles/pages/projects-styles'
+import {
+  StyledProjectsPage,
+  Projects,
+  SectionTitle,
+} from '../styles/pages/projects-styles'
 
 import projects from '../data.json'
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 300,
+      staggerChildren: 0.2,
+    },
+  },
+}
 
 export default () => {
   return (
     <Layout>
-      <StyledProjectsPage>
-        <h1>Projects</h1>
-        <Projects>
+      <StyledProjectsPage
+        initial="initial"
+        animate="animate"
+        variants={variants}
+      >
+        <SectionTitle variants={variants}>Projects</SectionTitle>
+        <Projects variants={variants}>
           <CarouselProvider
             naturalSlideWidth={60}
             naturalSlideHeight={30}
