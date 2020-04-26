@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import { StyledMenu, MenuLink } from '../styles/menu-styles'
+import { StyledMenu, MenuLink } from '../styles/side-menu-styles'
 
 export const SideMenu = () => {
   return (
