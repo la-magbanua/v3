@@ -5,7 +5,7 @@ import { Footer } from './footer'
 import { BlockReveal } from './block-reveal'
 import { Wrap } from './wrap'
 import { Socials } from './socials'
-import { Menu } from './menu'
+import { SideMenu } from './side-menu'
 import { NavMenu } from './nav-menu'
 
 export {
@@ -16,6 +16,6 @@ export {
   Footer,
   BlockReveal,
   Socials,
-  Menu,
+  SideMenu,
   NavMenu,
 }

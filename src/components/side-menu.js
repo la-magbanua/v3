@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import { StyledMenu, MenuLink } from '../styles/menu-styles'
 
-export const Menu = () => {
+export const SideMenu = () => {
   return (
     <StyledMenu>
       <MenuLink>

@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMediaQuery } from 'react-responsive'
 import { ThemeProvider } from 'styled-components'
-import { Head, Header, Footer, Wrap, Menu } from './index'
+import { Head, Header, Footer, Wrap, SideMenu } from './index'
 
 import { GlobalStyles, theme } from '../styles'
 
@@ -16,7 +16,7 @@ export const Layout = ({ children }) => {
         <main>
           <Wrap>
             {children}
-            {isMobile ? null : <Menu />}
+            {isMobile ? null : <SideMenu />}
           </Wrap>
         </main>
         <Footer />
