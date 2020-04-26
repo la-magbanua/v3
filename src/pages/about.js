@@ -5,10 +5,27 @@ import {
   StyledAboutPage,
   Section,
   SectionTitle,
+  SubsectionTitle,
   AboutDescription,
   Skills,
   SkillItem,
 } from '../styles/pages/about-styles'
+
+const variants = {
+  initial: {
+    opacity: 0,
+    y: 30,
+  },
+  animate: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      damping: 300,
+      staggerChildren: 0.2,
+    },
+  },
+}
 
 export default () => {
   const [skills] = useState([
@@ -24,18 +41,18 @@ export default () => {
 
   return (
     <Layout>
-      <StyledAboutPage>
+      <StyledAboutPage initial="initial" animate="animate" variants={variants}>
         <Section>
-          <SectionTitle>About Me</SectionTitle>
-          <AboutDescription>
+          <SectionTitle variants={variants}>About Me</SectionTitle>
+          <AboutDescription variants={variants}>
             I'm a front end developer based in the Philippines. Focused on
             delivering delighful & functional web experiences. I mainly use
             JavaScript and React.
           </AboutDescription>
         </Section>
         <Section>
-          <h3>Skills</h3>
-          <Skills>
+          <SubsectionTitle variants={variants}>Skills</SubsectionTitle>
+          <Skills variants={variants}>
             {skills.map(({ id, skill }) => (
               <SkillItem key={id}>{skill}</SkillItem>
             ))}

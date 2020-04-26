@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-export const StyledAboutPage = styled.div`
+export const StyledAboutPage = styled(motion.div)`
   margin-top: 50px;
   color: ${({ theme }) => theme.colors.textColor};
 `
@@ -20,7 +20,9 @@ export const AboutDescription = styled(motion.p)`
   opacity: 80%;
 `
 
-export const Skills = styled.div`
+export const SubsectionTitle = styled(motion.h3)``
+
+export const Skills = styled(motion.div)`
   max-width: 500px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(100px, 120px));
