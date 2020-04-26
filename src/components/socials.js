@@ -26,7 +26,7 @@ const variants = {
 
 export const Socials = () => {
   return (
-    <StyledSocials initial="initial" animate="animate" variants={variants}>
+    <StyledSocials initial={false} animate="animate" variants={variants}>
       <SocialLinks>
         <SocialLink
           href="#"
