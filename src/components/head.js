@@ -8,6 +8,8 @@ export const Head = () => {
       site {
         siteMetadata {
           title
+          description
+          author
         }
       }
     }
@@ -17,6 +19,11 @@ export const Head = () => {
     <Helmet>
       <meta charSet="utf-8" />
       <title>{data.site.siteMetadata.title}</title>
+      <meta
+        name="description"
+        content={data.site.siteMetadata.description}
+      ></meta>
+      <meta name="author" content={data.site.siteMetadata.author}></meta>
     </Helmet>
   )
 }
