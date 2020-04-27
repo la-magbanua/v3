@@ -20,7 +20,7 @@
     "title": "v3",
     "description": "3rd iteration of my portfolio website",
     "github_url": "https://github.com/la-magbanua/v3",
-    "url": "https://la-magbanua.now.sh",
+    "url": "https://la-magbanua.netlify.app",
     "stack": ["Gatsby", "Styled Components"]
   }
 ]
