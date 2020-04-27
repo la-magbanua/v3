@@ -29,7 +29,7 @@ export const Socials = () => {
     <StyledSocials initial={false} animate="animate" variants={variants}>
       <SocialLinks>
         <SocialLink
-          href="#"
+          href="https://github.com/la-magbanua"
           target="_blank"
           rel="noopener noreferrer"
           variants={variants}
@@ -38,7 +38,7 @@ export const Socials = () => {
         </SocialLink>
 
         <SocialLink
-          href="#"
+          href="https://www.linkedin.com/in/lee-arnold-magbanua/"
           target="_blank"
           rel="noopener noreferrer"
           variants={variants}
