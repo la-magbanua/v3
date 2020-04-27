@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const StyledFooter = styled.footer`
+  flex-shrink: 0;
+
   p {
     font-size: 10px;
     letter-spacing: 1.2px;

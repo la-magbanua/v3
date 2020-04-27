@@ -18,8 +18,12 @@ export const GlobalStyles = createGlobalStyle`
   #___gatsby,
   #gatsby-focus-wrapper {
     display: flex;
-    height: calc(100vh - 30px);
+    height: 100vh;
     flex-direction: column;
+
+    @media screen and (max-width: 480px) {
+      height: calc(100vh - 70px);
+    }
   }
 
   main {
