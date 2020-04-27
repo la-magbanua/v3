@@ -13,9 +13,6 @@ const NavProvider = ({ children }) => {
 
 const useNav = () => {
   const context = useContext(NavContext)
-  if (context === undefined) {
-    throw new Error('useNav should be used inside NavProvider')
-  }
   return context
 }
 
