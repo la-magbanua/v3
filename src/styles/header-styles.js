@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
-export const StyledHeader = styled.header``
+export const StyledHeader = styled.header`
+  z-index: ${({ theme }) => theme.zIndex.highest};
+`
 
 export const InnerHeader = styled.div`
   height: 80px;

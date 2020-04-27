@@ -11,4 +11,8 @@ export const theme = {
     bold: 700,
     xBold: 800,
   },
+  zIndex: {
+    highest: 99999,
+    higher: 9999,
+  },
 }

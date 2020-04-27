@@ -6,8 +6,9 @@ import { BlockReveal } from './block-reveal'
 import { Wrap } from './wrap'
 import { Socials } from './socials'
 import { SideMenu } from './side-menu'
-import { NavMenu } from './nav-menu'
+import { NavBurger } from './nav-burger'
 import { ProjectItem } from './project-item'
+import { NavDrawer } from './nav-drawer'
 
 export {
   Layout,
@@ -18,6 +19,7 @@ export {
   BlockReveal,
   Socials,
   SideMenu,
-  NavMenu,
+  NavBurger,
   ProjectItem,
+  NavDrawer,
 }

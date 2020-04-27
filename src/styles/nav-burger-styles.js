@@ -1,8 +1,9 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const StyledNavMenu = styled.nav``
 
-export const NavBurger = styled.button`
+export const Burger = styled(motion.button)`
   outline: none;
   border: none;
   background: transparent;
