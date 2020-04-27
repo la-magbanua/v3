@@ -17,8 +17,8 @@ export const GlobalStyles = createGlobalStyle`
 
   #___gatsby,
   #gatsby-focus-wrapper {
-    height: 100vh;
     display: flex;
+    height: calc(100vh - 30px);
     flex-direction: column;
   }
 

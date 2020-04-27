@@ -1,5 +1,4 @@
 import styled, { keyframes } from 'styled-components'
-import { motion } from 'framer-motion'
 
 export const StyledMenu = styled.div`
   position: absolute;
@@ -27,14 +26,14 @@ const fadeIn = keyframes`
 `
 
 export const MenuLink = styled.div`
-  opacity: 0;
+  /* opacity: 0; */
   margin-right: 30px;
   transition: 0.25s all ease;
-  animation: ${fadeIn} 1s 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  /* animation: ${fadeIn} 1s 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
 
   &:last-child {
     animation: ${fadeIn} 1s 1.1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  }
+  } */
 
   a {
     display: block;
