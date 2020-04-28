@@ -1,7 +1,7 @@
 import styled, { keyframes } from 'styled-components'
 import { motion } from 'framer-motion'
 
-export const BlockContainer = styled(motion.div)`
+export const BlockContainer = styled.div`
   position: relative;
   margin-top: 50px;
   width: 100%;
@@ -9,22 +9,37 @@ export const BlockContainer = styled(motion.div)`
   color: ${({ theme }) => theme.colors.textColor};
 `
 
-export const TextContainer = styled.div`
-  overflow: hidden;
-
-  &:nth-of-type(2) {
-    margin-top: 20px;
+const slideUp = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 `
 
-export const Name = styled(motion.h3)`
+export const TextContainer = styled.div`
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: ${slideUp} 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+
+  &:nth-of-type(2) {
+    margin-top: 20px;
+    animation: ${slideUp} 1s 0.18s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+  }
+`
+
+export const Name = styled.h3`
   margin: 0;
   font-size: 2rem;
   padding-bottom: 0.2rem;
   text-transform: uppercase;
 `
 
-export const Job = styled(motion.h1)`
+export const Job = styled.h1`
   margin: 0;
   font-size: 3rem;
   font-weight: ${({ theme }) => theme.fontWeights.xBold};
