@@ -1,7 +1,12 @@
-/**
- * Implement Gatsby's SSR (Server Side Rendering) APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/ssr-apis/
- */
+import React from 'react'
 
-// You can delete this file if you're not using it
+import { NavProvider } from './src/contexts/nav-context'
+import { ThemeProvider } from 'styled-components'
+
+import { theme } from './src/styles'
+
+export const wrapRootElement = ({ element }) => (
+  <NavProvider>
+    <ThemeProvider theme={theme}>{element}</ThemeProvider>
+  </NavProvider>
+)
