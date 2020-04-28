@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 export const StyledHeader = styled.header`
   z-index: ${({ theme }) => theme.zIndex.highest};
@@ -11,10 +12,9 @@ export const InnerHeader = styled.div`
   align-items: center;
 `
 
-export const Brand = styled.div`
-  a {
-    font-size: 1.2rem;
-    font-weight: ${({ theme }) => theme.fontWeights.bold};
-    color: ${({ theme }) => theme.colors.accentColor};
-  }
+export const Brand = styled(Link)`
+  font-size: 1.2rem;
+  font-weight: ${({ theme }) => theme.fontWeights.bold};
+  color: ${({ theme, open }) =>
+    open ? theme.colors.bgColor : theme.colors.accentColor};
 `

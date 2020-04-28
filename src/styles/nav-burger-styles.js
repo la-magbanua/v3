@@ -13,7 +13,8 @@ export const Burger = styled(motion.button)`
     display: block;
     width: 32px;
     height: 3px;
-    background: ${({ theme }) => theme.colors.textColor};
+    background: ${({ theme, open }) =>
+      open ? theme.colors.bgColor : theme.colors.textColor};
 
     &:last-child {
       margin-top: 8px;

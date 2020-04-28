@@ -24,6 +24,7 @@ export const NavBurger = () => {
   return (
     <StyledNavMenu>
       <Burger
+        open={isOpen}
         animate={isOpen ? 'animate' : 'initial'}
         variants={variants}
         onClick={() => setIsOpen(state => !state)}

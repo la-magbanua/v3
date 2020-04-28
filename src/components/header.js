@@ -7,16 +7,16 @@ import { StyledHeader, InnerHeader, Brand } from '../styles/header-styles'
 import { useNav } from '../contexts/nav-context'
 
 export const Header = () => {
-  const { setIsOpen } = useNav()
+  const { isOpen, setIsOpen } = useNav()
 
   return (
     <StyledHeader>
       <Wrap>
         <InnerHeader>
-          <Brand>
-            <Link to="/" onClick={() => setIsOpen(false)}>
-              L.A.
-            </Link>
+          <Brand to="/" onClick={() => setIsOpen(false)} open={isOpen}>
+            {/* <Link > */}
+            L.A.
+            {/* </Link> */}
           </Brand>
           <ClientOnly>
             <NavBurger />
