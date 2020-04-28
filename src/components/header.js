@@ -1,19 +1,13 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { useMediaQuery } from 'react-responsive'
-import { Wrap, NavBurger } from '../components'
+import { Wrap, NavBurger, ClientOnly } from '../components'
 
 import { StyledHeader, InnerHeader, Brand } from '../styles/header-styles'
 import { useNav } from '../contexts/nav-context'
 
 export const Header = () => {
-  const [hasMounted, setHasMounted] = useState(false)
-  const isMobile = useMediaQuery({ maxWidth: 500 })
   const { setIsOpen } = useNav()
-
-  useEffect(() => {
-    setHasMounted(true)
-  }, [])
 
   return (
     <StyledHeader>
@@ -24,7 +18,9 @@ export const Header = () => {
               L.A.
             </Link>
           </Brand>
-          {isMobile && hasMounted ? <NavBurger /> : null}
+          <ClientOnly>
+            <NavBurger />
+          </ClientOnly>
         </InnerHeader>
       </Wrap>
     </StyledHeader>

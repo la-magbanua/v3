@@ -9,6 +9,7 @@ import { SideMenu } from './side-menu'
 import { NavBurger } from './nav-burger'
 import { ProjectItem } from './project-item'
 import { NavDrawer } from './nav-drawer'
+import { ClientOnly } from './client-only'
 
 export {
   Layout,
@@ -22,4 +23,5 @@ export {
   NavBurger,
   ProjectItem,
   NavDrawer,
+  ClientOnly,
 }

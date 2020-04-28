@@ -1,12 +1,18 @@
 import React, { useState, useEffect } from 'react'
-import { useMediaQuery } from 'react-responsive'
-import { Head, Header, Footer, Wrap, SideMenu, NavDrawer } from './index'
+import {
+  Head,
+  Header,
+  Footer,
+  Wrap,
+  SideMenu,
+  NavDrawer,
+  ClientOnly,
+} from './index'
 
 import { GlobalStyles } from '../styles'
 
 export const Layout = ({ children }) => {
   const [hasMounted, setHasMounted] = useState(false)
-  const isMobile = useMediaQuery({ maxWidth: 500 })
 
   useEffect(() => {
     setHasMounted(true)
@@ -20,10 +26,12 @@ export const Layout = ({ children }) => {
       <main>
         <Wrap>
           {children}
-          {isMobile && hasMounted ? null : <SideMenu />}
+          <ClientOnly>
+            <SideMenu />
+          </ClientOnly>
         </Wrap>
       </main>
-      {isMobile && hasMounted ? <NavDrawer /> : null}
+      <NavDrawer />
       <Footer />
     </>
   )
