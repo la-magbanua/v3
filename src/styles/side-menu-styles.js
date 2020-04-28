@@ -1,6 +1,7 @@
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const StyledMenu = styled.div`
+export const StyledMenu = styled(motion.div)`
   position: absolute;
   right: 0;
   top: 10rem;
@@ -14,26 +15,8 @@ export const StyledMenu = styled.div`
   }
 `
 
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateX(90px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`
-
-export const MenuLink = styled.div`
-  /* opacity: 0; */
+export const MenuLink = styled(motion.div)`
   margin-right: 30px;
-  transition: 0.25s all ease;
-  /* animation: ${fadeIn} 1s 1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-
-  &:last-child {
-    animation: ${fadeIn} 1s 1.1s cubic-bezier(0.19, 1, 0.22, 1) forwards;
-  } */
 
   a {
     display: block;

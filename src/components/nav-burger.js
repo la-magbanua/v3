@@ -4,7 +4,16 @@ import { useNav } from '../contexts/nav-context'
 
 import { StyledNavMenu, Burger } from '../styles/nav-burger-styles'
 
-const variants = {
+const navVariants = {
+  hidden: {
+    opacity: 0,
+  },
+  show: {
+    opacity: 1,
+  },
+}
+
+const burgerVariants = {
   initial: {
     rotate: 0,
   },
@@ -22,11 +31,11 @@ export const NavBurger = () => {
   }
 
   return (
-    <StyledNavMenu>
+    <StyledNavMenu initial="hidden" animate="show" variants={navVariants}>
       <Burger
         open={isOpen}
         animate={isOpen ? 'animate' : 'initial'}
-        variants={variants}
+        variants={burgerVariants}
         onClick={() => setIsOpen(state => !state)}
       >
         <span></span>

@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
-export const StyledNavMenu = styled.nav``
+export const StyledNavMenu = styled(motion.nav)``
 
 export const Burger = styled(motion.button)`
   outline: none;

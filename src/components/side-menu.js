@@ -1,8 +1,21 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import { Link } from 'gatsby'
 import { useMediaQuery } from 'react-responsive'
 
 import { StyledMenu, MenuLink } from '../styles/side-menu-styles'
+
+const variants = {
+  initial: {
+    opacity: 0,
+  },
+  animate: {
+    opacity: 1,
+    transition: {
+      delayChildren: 1,
+      staggerChildren: 0.2,
+    },
+  },
+}
 
 export const SideMenu = () => {
   const isMobile = useMediaQuery({ maxWidth: 500 })
@@ -12,11 +25,16 @@ export const SideMenu = () => {
   }
 
   return (
-    <StyledMenu>
-      <MenuLink>
+    <StyledMenu
+      key="styledMenu"
+      initial="initial"
+      animate="animate"
+      variants={variants}
+    >
+      <MenuLink variants={variants}>
         <Link to="/about">About</Link>
       </MenuLink>
-      <MenuLink>
+      <MenuLink variants={variants}>
         <Link to="/projects">Projects</Link>
       </MenuLink>
     </StyledMenu>
