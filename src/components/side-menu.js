@@ -11,7 +11,6 @@ const variants = {
   animate: {
     opacity: 1,
     transition: {
-      delayChildren: 1,
       staggerChildren: 0.2,
     },
   },
