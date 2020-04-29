@@ -4,7 +4,7 @@ export const theme = {
     accentColor: '#f1f1f1',
     textColor: '#e5e7e9',
     textColor80: '#bbbdbe',
-    gradient: 'linear-gradient(160deg, #0093e9 0%, #80d0c7 100%)',
+    gradient: 'linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%)',
   },
   fontWeights: {
     normal: 400,

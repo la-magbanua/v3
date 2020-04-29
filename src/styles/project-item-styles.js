@@ -5,8 +5,10 @@ export const StyledProjectItem = styled.div`
   height: 80%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   color: ${({ theme }) => theme.colors.textColor};
+  position: relative;
+  /* background: coral; */
 
   @media screen and (max-width: 500px) {
     width: 100%;
@@ -14,11 +16,41 @@ export const StyledProjectItem = styled.div`
   }
 `
 
-export const ItemDetails = styled.div`
-  padding: 0 4rem;
+export const PatternBox = styled.div`
+  position: absolute;
+  display: block;
+  width: 150px;
+  height: 150px;
+  top: 0;
+  left: 0;
+
+  div {
+    position: relative;
+    left: 25px;
+    top: 25px;
+    width: 500px;
+    height: 220px;
+    background: ${({ theme }) => theme.colors.gradient};
+  }
 
   @media screen and (max-width: 500px) {
-    padding: 0 2rem;
+    top: 10px;
+    left: 10px;
+
+    div {
+      width: 300px;
+      left: 25px;
+    }
+  }
+`
+
+export const ItemDetails = styled.div`
+  padding: 0 4rem;
+  z-index: 9;
+
+  @media screen and (max-width: 500px) {
+    padding: 0 4rem;
+    margin-top: 2rem;
   }
 `
 
@@ -40,6 +72,10 @@ export const Description = styled.p`
 export const Stack = styled.div`
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 500px) {
+    margin-bottom: 10px;
+  }
 `
 
 export const StackItem = styled.span`
@@ -60,8 +96,8 @@ export const StackItem = styled.span`
 `
 
 export const ProjectLinks = styled.div`
-  margin-top: 5rem;
-  padding: 0 4rem 1rem 0;
+  margin-top: 1rem;
+  padding-bottom: 1rem;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -87,7 +123,7 @@ export const ProjectLinks = styled.div`
 
   @media screen and (max-width: 500px) {
     margin-top: 0;
-    padding: 0 1.5rem 10px 0;
+    padding: 0;
 
     svg {
       width: 1rem;
