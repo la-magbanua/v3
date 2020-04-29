@@ -36,8 +36,7 @@ export const DrawerLinks = styled(motion.div)`
     margin: 1.5rem 0;
 
     &.is-active {
-      background-color: #0093e9;
-      background-image: linear-gradient(160deg, #0093e9 0%, #80d0c7 100%);
+      background-image: ${({ theme }) => theme.colors.gradient};
       background-clip: text;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
