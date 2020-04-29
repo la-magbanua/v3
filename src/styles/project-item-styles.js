@@ -23,6 +23,7 @@ export const PatternBox = styled.div`
   height: 150px;
   top: 0;
   left: 0;
+  color: #b721ff;
 
   div {
     position: relative;
@@ -82,7 +83,7 @@ export const StackItem = styled.span`
   display: inline-flex;
   border: 1px solid ${({ theme }) => theme.colors.textColor80};
   opacity: 80%;
-  font-size: 12px;
+  font-size: 11px;
   padding: 4px 8px;
 
   &:not(last-child) {
@@ -90,7 +91,7 @@ export const StackItem = styled.span`
   }
 
   @media screen and (max-width: 500px) {
-    font-size: 11px;
+    font-size: 10px;
     padding: 2px 4px;
   }
 `
