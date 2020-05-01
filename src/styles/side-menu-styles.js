@@ -21,5 +21,20 @@ export const MenuLink = styled(motion.div)`
   a {
     display: block;
     color: ${({ theme }) => theme.colors.textColor};
+
+    &:after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 2px;
+      background: ${({ theme }) => theme.colors.gradient};
+      transition: 0.25s all ease;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
   }
 `

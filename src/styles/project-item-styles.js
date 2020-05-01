@@ -8,7 +8,6 @@ export const StyledProjectItem = styled.div`
   justify-content: center;
   color: ${({ theme }) => theme.colors.textColor};
   position: relative;
-  /* background: coral; */
 
   @media screen and (max-width: 500px) {
     width: 100%;
