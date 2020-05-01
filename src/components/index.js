@@ -10,6 +10,7 @@ import { NavBurger } from './nav-burger'
 import { ProjectItem } from './project-item'
 import { NavDrawer } from './nav-drawer'
 import { ClientOnly } from './client-only'
+import { Boxes } from './boxes'
 
 export {
   Layout,
@@ -24,4 +25,5 @@ export {
   ProjectItem,
   NavDrawer,
   ClientOnly,
+  Boxes,
 }
