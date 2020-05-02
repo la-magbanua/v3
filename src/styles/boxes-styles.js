@@ -10,6 +10,7 @@ export const BoxesContainer = styled.div`
   @media screen and (max-width: 500px) {
     max-width: 100%;
     width: 100%;
+    margin-top: 3rem;
   }
 `
 
@@ -29,7 +30,8 @@ export const Box = styled.div`
       box-shadow: -10px 10px 40px rgba(142, 45, 226, 0.3);
 
       @media screen and (max-width: 500px) {
-        height: 140px;
+        height: 100px;
+        width: 180px;
         right: -70px;
       }
     `}
@@ -50,9 +52,9 @@ export const DotBox = styled.div`
       height: 200px;
 
       @media screen and (max-width: 500px) {
-        top: -5px;
+        top: -8px;
         right: 30px;
-        height: 160px;
+        height: 110px;
       }
     `}
 
@@ -64,9 +66,10 @@ export const DotBox = styled.div`
       z-index: 3;
 
       @media screen and (max-width: 500px) {
-        top: 15px;
-        right: -160px;
-        height: 120px;
+        top: 10px;
+        right: -155px;
+        height: 90px;
+        width: 170px;
       }
     `}
 
