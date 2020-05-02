@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const BoxesContainer = styled.div`
+export const BoxesContainer = styled(motion.div)`
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
@@ -14,7 +15,7 @@ export const BoxesContainer = styled.div`
   }
 `
 
-export const Box = styled.div`
+export const Box = styled(motion.div)`
   position: relative;
   width: 100px;
   height: 100px;
@@ -31,13 +32,13 @@ export const Box = styled.div`
 
       @media screen and (max-width: 500px) {
         height: 100px;
-        width: 140px;
+        width: 120px;
         right: -70px;
       }
     `}
 `
 
-export const DotBox = styled.div`
+export const DotBox = styled(motion.div)`
   position: relative;
   width: 180px;
   height: 180px;
@@ -55,7 +56,7 @@ export const DotBox = styled.div`
         top: -8px;
         right: 35px;
         height: 110px;
-        width: 145px;
+        width: 140px;
       }
     `}
 
