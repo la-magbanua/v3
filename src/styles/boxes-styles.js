@@ -10,7 +10,7 @@ export const BoxesContainer = styled.div`
   @media screen and (max-width: 500px) {
     max-width: 100%;
     width: 100%;
-    margin-top: 3rem;
+    margin-top: 4.5rem;
   }
 `
 
